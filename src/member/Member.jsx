@@ -2,12 +2,8 @@
 
 const Member = () => {
     return (
-        <div className=" lg:grid lg:grid-cols-2 gap-9 lg:ml-28 mt-20 cursor-pointer ">
-
-
-
-
-        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg">
+      <div className=" lg:grid lg:grid-cols-2 gap-9 lg:ml-28 mt-20 ">
+        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg cursor-pointer ">
           <figure>
             <img
               className=" w-64 rounded-xl"
@@ -29,7 +25,7 @@ const Member = () => {
           </div>
         </div>
 
-        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg">
+        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg cursor-pointer ">
           <figure>
             <img
               className=" w-64 rounded-xl"
@@ -50,7 +46,7 @@ const Member = () => {
           </div>
         </div>
 
-        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg">
+        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg cursor-pointer ">
           <figure>
             <img
               className=" w-64 rounded-xl"
@@ -71,7 +67,7 @@ const Member = () => {
           </div>
         </div>
 
-        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg">
+        <div className="card card-side w-[500px] h-[400px] bg-base-100 shadow-lg cursor-pointer ">
           <figure>
             <img
               className=" w-64 rounded-xl"
@@ -90,11 +86,10 @@ const Member = () => {
               </p>
             </div>
           </div>
-            </div>
-            
-            <br />
-            <br />
+        </div>
 
+        <br />
+        <br />
       </div>
     );
 };
