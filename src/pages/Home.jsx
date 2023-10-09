@@ -2,7 +2,6 @@
 // eslint-disable-next-line no-unused-vars
 
 
-import Foter from "../foter/Foter";
 import Services from "../services/Services";
 
 
@@ -41,12 +40,10 @@ const Home = () => {
           </p>
         </div>
 
-        <section className=" mt-20">
+        <section className=" mt-20 ">
           <Services></Services>
         </section>
-        <section className=" mt-16">
-          <Foter></Foter>
-        </section>
+       
       </div>
     );
 };
