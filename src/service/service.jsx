@@ -4,11 +4,11 @@
 const Service = ({ data }) => {
     const { title, date, description, Price, attendees, image } = data;
 
-console.log(data);
+
     return (
-      <div className=" lg:grid lg:grid-cols-3 gap-9 lg:ml-28 mt-20 ">
-        <div  className="card w-96  bg-base-100 shadow-xl" >
-          <figure >
+      <div className=" ">
+        <div className="card  bg-base-100 shadow-lg h-[650px]">
+          <figure>
             <img className=" h-60 w-96 bg-cover" src={image} alt="" />
           </figure>
           <div className="card-body">
@@ -26,7 +26,9 @@ console.log(data);
                 Price : {Price}
               </div>
             </div>
-            <div  className="btn btn-outline btn-secondary ">Read more</div>
+            <div className="btn btn-outline btn-secondary ">
+              <p>Read more</p>
+            </div>
           </div>
         </div>
       </div>

@@ -11,47 +11,33 @@ import Register from "../register/Register";
 const router = createBrowserRouter([
   {
     path: "/",
-        element: <Layout></Layout>,
-    
-        children: [
+    element: <Layout></Layout>,
 
-            {
-                
-                path: '/',
-                 element:<Home></Home>,
-            
-          },
-          {
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/About",
 
-            path: '/About',
+        element: <About></About>,
+      },
+      {
+        path: "/Contact",
 
-            element:<About></About>
-            
-
-          },
-          {
-
-            path: '/Contact',
-            
-            element:<Contact></Contact>
-
-          }, {
-            
-
-            path: '/Lgin',
-            element:<Lgin></Lgin>
-
-          }
-          , {
-            
-
-            path: '/Register',
-            element:<Register></Register>
-
-          }
-
-
-        ]
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/Lgin",
+        element: <Lgin></Lgin>,
+      },
+      {
+        path: "/Register",
+        element: <Register></Register>,
+      },
+     
+    ],
   },
 ]);
 

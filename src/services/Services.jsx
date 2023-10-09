@@ -18,23 +18,11 @@ const Services = () => {
 
 console.log(services);
     return (
-
-
-
-        <div>
-
-            {
-                
-services.map(value=> <Service  data={value}></Service>)
-
-
-}
-
-
-        
-        </div>
-    
-    
+      <div className="lg:grid lg:grid-cols-3  gap-11">
+        {services.map((value) => (
+          <Service data={value}></Service>
+        ))}
+      </div>
     );
 };
 

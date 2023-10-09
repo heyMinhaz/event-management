@@ -47,10 +47,10 @@ const Navbar = () => {
 
         <label tabIndex={0} className="   ">
           <div className="   ">
-            <img
+          <NavLink to='/' > <img
               className=" w-auto h-14 cursor-pointer"
               src="https://images.squarespace-cdn.com/content/v1/55ce79cee4b0ef57d7cb12b8/1606884575371-O0IJD68CNXY3HAV9O2FY/PrimaryLogo.png?format=2500w"
-            />
+            /></NavLink> 
           </div>
         </label>
       </div>
