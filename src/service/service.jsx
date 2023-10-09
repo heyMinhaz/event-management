@@ -6,7 +6,7 @@ const Service = ({ data }) => {
 
 console.log(data);
     return (
-      <div >
+      <div className=" lg:grid lg:grid-cols-3 gap-9 lg:ml-28 mt-20 ">
         <div  className="card w-96  bg-base-100 shadow-xl" >
           <figure >
             <img className=" h-60 w-96 bg-cover" src={image} alt="" />
