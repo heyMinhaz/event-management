@@ -11,21 +11,22 @@ import Services from "../services/Services";
 
 const Home = () => {
     return (
-      <div >
-        <div 
-          className=" p-72  "
+      <div>
+        <section
+          className=" lg:p-64 text-center p-40"
           style={{
-            backgroundImage: `url("https://i.ibb.co/5LGjT6R/background-overlay.jpg")`,
+            backgroundImage:
+              "url(https://i.ibb.co/5LGjT6R/background-overlay.jpg)",
+
             backgroundSize: "cover",
           }}
         >
-          <h1 className=" lg:text-center text-5xl font-bold  text-white ">
-            Creating unforgettable <br />
-            experiences.
+          <h1 className=" lg:text-7xl text-4xl font-bol text-white">
+            Creating unforgettable <br /> memories
           </h1>
-        </div>
+        </section>
 
-        <section >
+        <section>
           <h1 className=" lg:text-5xl lg:text-center lg:mt-14">
             <span className=" text-[#d6a4ad]">Hey There,</span> we are social
             event management company
@@ -44,14 +45,12 @@ const Home = () => {
           </div>
         </section>
 
-        <section  className=" mt-20" >
+        <section className=" mt-20">
           <Services></Services>
-            </section>
-            <section className=" mt-16">
-
-<Foter></Foter>
-
-            </section>
+        </section>
+        <section className=" mt-16">
+          <Foter></Foter>
+        </section>
       </div>
     );
 };

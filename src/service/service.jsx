@@ -6,8 +6,8 @@ const Service = ({ data }) => {
 
 console.log(data);
     return (
-      <div>
-        <div  className="card w-96  bg-base-100 shadow-xl">
+      <div >
+        <div  className="card w-96  bg-base-100 shadow-xl" >
           <figure >
             <img className=" h-60 w-96 bg-cover" src={image} alt="" />
           </figure>
@@ -26,7 +26,7 @@ console.log(data);
                 Price : {Price}
               </div>
             </div>
-            <div className="btn btn-outline btn-secondary ">Read more</div>
+            <div  className="btn btn-outline btn-secondary ">Read more</div>
           </div>
         </div>
       </div>
