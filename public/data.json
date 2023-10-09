@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Weddings",
+    "date": "2023-04-10",
+    "Price": "100$",
+    "description": "Love is a journey, and we are thrilled to celebrate this monumental step in the lives of . Join us for a day of joy, laughter, and heartfelt vows as we witness the union of two souls in love.",
+    "attendees": 300,
+    "image": "https://i.ibb.co/jT2NPgR/284912622-537363174599565-8313416739499186466-n.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Birthday Parties",
+    "date": "2023-05-25",
+    "Price": "450$",
+    "description": "Get ready to party! We're celebrating another fantastic year in the life of [Celebrant's Name]. Join us for an unforgettable [Age]th birthday bash filled with fun, laughter, and good company. It's a day to make memories and celebrate the wonderful person [he/she] is!",
+    "attendees": 200,
+    "image": "https://i.ibb.co/hHpq5Rn/pexels-lil-artsy-1793037.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Anniversaries",
+    "date": "2023-06-20",
+    "Price": "350$",
+    "description": "Join us in celebrating a journey of love, companionship, and cherished memories. are commemorating wonderful years together, and we invite you to be a part of this special milestone. Let's come together to honor their enduring commitment and toast to many more years of happiness!",
+    "attendees": 150,
+    "image": "https://i.ibb.co/BZ16KzQ/pexels-ivan-samkov-7922176.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Engagement Parties",
+    "date": "2023-07-08",
+    "Price": "150$",
+    "description": "Love is in the air! Join us for a joyous celebration as we raise our glasses to honor the engagement . This special occasion calls for an evening of laughter, love, and cherished moments with family and friends.",
+    "attendees": 250,
+    "image": "https://i.ibb.co/rfS8Jtf/pexels-emma-bauso-2253838.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Retirement Parties",
+    "date": "2023-08-15",
+    "Price": "550$",
+    "description": "After years of dedicated service, it's time to bid farewell to our esteemed colleague and friend. Join us for a memorable evening filled with warm wishes, fond memories, and a touch of celebration as we mark the beginning of [his/her] well-deserved retirement.",
+    "attendees": 800,
+    "image": "https://i.ibb.co/wgn6DPZ/pexels-t-leish-6975184.jpg"
+  },
+  {
+    "id": 6,
+    "title": " Baby shower",
+    "date": "2023-10-31",
+    "Price": "200$",
+    "description": "Join us for a joyous celebration as we eagerly await the arrival of a precious bundle of joy! We're hosting a delightful baby shower in honor of [Parent's Name], who is soon to embark on the wonderful journey of parenthood.",
+    "attendees": 400,
+    "image": "https://i.ibb.co/NmmDtKz/pexels-ron-lach-9155587.jpg"
+  }
+]
