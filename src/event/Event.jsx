@@ -3,7 +3,7 @@
 
 const Event = () => {
     return (
-      <div>
+      <div data-aos="fade-up" data-aos-duration="3000">
         <div class="container my-24 mx-auto md:px-6 bg-base-200 shadow-lg rounded-md ">
           <section class="mb-32 text-center p-20">
             <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">

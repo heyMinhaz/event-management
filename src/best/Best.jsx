@@ -3,13 +3,12 @@
 
 const Best = () => {
     return (
-      <div>
+      <div data-aos="fade-up"
+     data-aos-duration="3000">
         <div className="container my-24 mx-auto md:px-6">
           <section className="mb-32 text-center">
             <h2 className="">
-             
               <u className="mb-16 text-3xl font-bold text-primary dark:text-primary-400">
-             
                 Why we are great?
               </u>
             </h2>

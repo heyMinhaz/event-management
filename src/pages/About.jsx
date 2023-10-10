@@ -15,7 +15,11 @@ const About = () => {
             backgroundSize: "cover",
           }}
         >
-          <h1 className=" lg:text-7xl text-4xl font-bol text-white">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" lg:text-7xl text-4xl font-bol text-white"
+          >
             Learn about our <br /> company member
           </h1>
         </section>

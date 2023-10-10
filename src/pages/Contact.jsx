@@ -3,7 +3,7 @@
 
 const Contact = () => {
   return (
-    <div className=" m-20">
+    <div data-aos="fade-up" className=" m-20">
       <div className=" bg-base-200 shadow-md ">
         <div class="container my-24 mx-auto md:px-6">
           <section class="mb-32">

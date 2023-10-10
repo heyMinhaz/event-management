@@ -9,7 +9,7 @@ const Service = ({ data }) => {
 
 
     return (
-      <div className=" ">
+      <div data-aos="fade-up" data-aos-duration="3000">
         <div className="card  bg-base-100 shadow-lg h-[500px]">
           <figure>
             <img className=" h-60 w-96 bg-cover" src={image} alt="" />
@@ -23,7 +23,13 @@ const Service = ({ data }) => {
             {description.length > 150 ? (
               <p>
                 {description.slice(0, 150)}
-                <Link to={`/data/${id}        `} className="link link-primary font-bold">  Read More...</Link>
+                <Link
+                  to={`/data/${id}        `}
+                  className="link link-primary font-bold"
+                >
+                  {" "}
+                  Read More...
+                </Link>
               </p>
             ) : (
               <p>{description}</p>

@@ -28,12 +28,14 @@ const Home = () => {
             backgroundSize: "cover",
           }}
         >
-          <h1 className=" lg:text-7xl text-4xl font-bol text-white">
-            Creating unforgettable <br /> memories
-          </h1>
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <h1 className=" lg:text-7xl text-4xl font-bol text-white">
+              Creating unforgettable <br /> memories
+            </h1>
+          </div>
         </section>
 
-        <div>
+        <div data-aos="fade-up" data-aos-duration="3000">
           <h1 className=" text-5xl mt-9 text-center">
             <span className=" text-[#d6a4ad]">Hey There,</span> we are social
             event management company
@@ -52,16 +54,11 @@ const Home = () => {
           <Services></Services>
         </section>
         <section>
-
-<Best></Best>
-
+          <Best></Best>
         </section>
         <section>
-
           <Event></Event>
-
         </section>
-       
       </div>
     );
 };
