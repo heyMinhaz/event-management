@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 
 
+import { useLoaderData } from "react-router-dom";
 import Services from "../services/Services";
 
 
@@ -9,6 +10,11 @@ import Services from "../services/Services";
 
 
 const Home = () => {
+
+  const datas = useLoaderData();
+  console.log(datas);
+
+
     return (
       <div>
         <section
