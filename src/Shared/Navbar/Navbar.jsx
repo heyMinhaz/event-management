@@ -1,7 +1,22 @@
 /* eslint-disable no-unused-vars */
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
+
+const {user,logOut} = useContext(AuthContext)
+
+  const handleLogOut = () => {
+    
+    logOut()
+      .then()
+    .catch()
+
+
+  }
+  
+
   const links = (
     <>
       <li>
@@ -18,7 +33,7 @@ const Navbar = () => {
   );
 
   return (
-    <div  className="navbar bg-base-100 shadow-sm ">
+    <div className="navbar bg-base-100 shadow-sm ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -47,10 +62,13 @@ const Navbar = () => {
 
         <label tabIndex={0} className="   ">
           <div className="   ">
-          <NavLink to='/' > <img
-              className=" w-auto h-14 cursor-pointer"
-              src="https://images.squarespace-cdn.com/content/v1/55ce79cee4b0ef57d7cb12b8/1606884575371-O0IJD68CNXY3HAV9O2FY/PrimaryLogo.png?format=2500w"
-            /></NavLink> 
+            <NavLink to="/">
+              {" "}
+              <img
+                className=" w-auto h-14 cursor-pointer"
+                src="https://images.squarespace-cdn.com/content/v1/55ce79cee4b0ef57d7cb12b8/1606884575371-O0IJD68CNXY3HAV9O2FY/PrimaryLogo.png?format=2500w"
+              />
+            </NavLink>
           </div>
         </label>
       </div>
@@ -64,9 +82,15 @@ const Navbar = () => {
           </div>
         </label>
 
-        <NavLink to='/Lgin'>
-         <p className="btn">Login</p>
-        </NavLink>
+        {user ? (
+          <p onClick={handleLogOut} className="btn">
+            Logout
+          </p>
+        ) : (
+          <NavLink to="/Lgin">
+            <p className="btn">Login</p>
+          </NavLink>
+        )}
       </div>
     </div>
   );

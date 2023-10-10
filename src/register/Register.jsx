@@ -1,25 +1,55 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/no-unescaped-entities */
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 
 const Register = () => {
 
+
+
+  const { createUser } = useContext(AuthContext);
+
+
+
+
    const handelRegister = (e) => {
      e.preventDefault();
+     console.log(e.currentTarget);
+     const form = new FormData(e.currentTarget)
 
-     const email = e.target.email.value;
-     const password = e.target.password.value;
-     const name = e.target.name.value;
-     console.log(name,email, password);
+     const name = form.get('name');
+     const email = form.get('email');
+     const password = form.get('password');
+
+     console.log(name,email,password);
+
+
+     createUser(email, password)
+       .then(result => {
+       
+         console.log(result.user)
+         
+       })
+     
+       .catch(error => {
+       
+         console.log(error)
+         
+         
+     })
+
+
    };
 
 
     return (
       <div>
         <div className="hero min-h-screen bg-base-200">
-          <h1 className=" text-4xl mb-8">Hey, Login your account</h1>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <h1 className=" text-4xl  text-center pt-10 text-cyan-600">Create Account</h1>
             <form onSubmit={handelRegister} className="card-body lg:w-[400px] ">
               <div className="form-control">
                 <label className="label">
