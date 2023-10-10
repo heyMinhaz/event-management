@@ -24,14 +24,17 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=>fetch('/data.json')
+        loader: ()=>fetch('./data.json')
       },
 
       {
   
         path: '/data/:id',
-        element: <PrivetRoute><Data></Data></PrivetRoute>
+        element: <PrivetRoute><Data></Data></PrivetRoute>,
+           loader: ()=>fetch('./data.json')
         
+
+
 
 
 },
