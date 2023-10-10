@@ -3,12 +3,17 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { useContext } from "react";
-import { Form, Link, NavLink } from "react-router-dom";
+import { Form, Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Lgin = () => {
  
   const { signIn } = useContext(AuthContext);
+
+  const location = useLocation();
+  const navigate =useNavigate()
+console.log('location i n the login page',location);
+
 
   const handelLogin = e => {
     
@@ -25,7 +30,10 @@ console.log(e.currentTarget);
     signIn(email, password)
       .then(result => {
       
-console.log(result.user);
+        console.log(result.user);
+        
+        navigate(location?.state ? location.state : '/' );
+
 
       })
       .catch(error => {

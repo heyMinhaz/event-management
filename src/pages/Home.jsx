@@ -4,6 +4,8 @@
 
 import { useLoaderData } from "react-router-dom";
 import Services from "../services/Services";
+import Best from "../best/Best";
+import Event from "../event/Event";
 
 
 
@@ -48,6 +50,16 @@ const Home = () => {
 
         <section className=" mt-20 ">
           <Services></Services>
+        </section>
+        <section>
+
+<Best></Best>
+
+        </section>
+        <section>
+
+          <Event></Event>
+
         </section>
        
       </div>

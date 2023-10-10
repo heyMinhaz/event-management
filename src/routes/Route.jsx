@@ -31,6 +31,7 @@ const router = createBrowserRouter([
   
         path: '/data/:id',
         element: <PrivetRoute><Data></Data></PrivetRoute>
+        
 
 
 },
